@@ -63,7 +63,7 @@ function App() {
         payload: JSON.stringify(standardPayload),
         status: 'Sent'
       });
-    } catch (e) {
+    } catch {
       logs.push({
         bridge: 'window.parent.postMessage',
         payload: 'Failed to serialise payload',
